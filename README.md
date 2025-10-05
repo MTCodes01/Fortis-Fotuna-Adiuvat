@@ -4,7 +4,7 @@ The software offers two main interactive modes:
 1. 🌌 **Deep-Zoom NASA Image Explorer** – A Google Maps–style viewer that allows users to pan and zoom across gigapixel space imagery, complete with annotations and educational overlays.  
 2. ☀️ **3D Solar System Simulation** – A WebGL-powered environment where users can explore planets and orbits around the Sun.  
 
-This dual design not only educates but also excites users by blending **science, technology, and storytelling**. By making cosmic data engaging, the project fosters curiosity and brings the wonders of the universe closer to everyone.##
+This dual design not only educates but also excites users by blending **science, technology, and storytelling**. By making cosmic data engaging, the project fosters curiosity and brings the wonders of the universe closer to everyone.
 
 # TEAM MEMBERS
 1) Pavithra Madhusoodhanan

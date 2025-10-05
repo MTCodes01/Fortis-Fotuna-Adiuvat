@@ -139,12 +139,8 @@ Fortis Fotuna transforms raw NASA data into an **interactive educational and res
 ## 📂 NASA Data
 
 **Primary Sources:**  
-- NASA Andromeda Galaxy imagery  
-- NASA Mars and Moon surface datasets  
-
-**Used for:**  
-- Building **deep-zoom demo tiles** in OpenSeadragon  
-- Creating **visually accurate backdrops** for the prototype  
+- NASA Galaxy imagery  
+- NASA Exoplanet Dataset  
 
 **Purpose:** Demonstrate scalable exploration of NASA’s **gigapixel imagery**.  
 

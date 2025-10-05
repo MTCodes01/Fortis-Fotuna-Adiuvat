@@ -14,7 +14,7 @@ This dual design not only educates but also excites users by blending **science,
 5) Harigovind P Nair
 
 # Link to product walkthrough
-https://1drv.ms/p/c/b299c4c6bae899e5/EXwGaQc5YT1GnAoXA_de3fsBJb9I0RwwblvHfV58ZxtSMQ?e=qpusjw
+https://youtu.be/7r2t2LAs5x4
 
 # OUTPUT
 ## Secured with login ##

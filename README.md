@@ -39,157 +39,138 @@ https://1drv.ms/p/c/b299c4c6bae899e5/EXwGaQc5YT1GnAoXA_de3fsBJb9I0RwwblvHfV58Zxt
 ![Screenshot 2024-10-06 090316](https://github.com/user-attachments/assets/185f2963-c3df-4538-92fa-a09daf833b6b)
 
 # What exactly does it do?
+**Fortis Fotuna Adiuvat** is an interactive web-based platform that allows users to explore space through two powerful experiences combined into a single interface.
 
-Fortis Fortuna Adiuvat – Cosmic Explorer is an interactive web-based platform that allows users to explore space through two powerful experiences in one interface:
+---
 
-🪐 3D Solar System Simulation:
+## 🪐 3D Solar System Simulation
 
-Built using Three.js, it visualizes the Sun, Earth, Mars, and Jupiter with realistic textures and orbits.
+- Built using **Three.js** for realistic 3D visualization.  
+- Features the **Sun, Earth, Mars, and Jupiter** with accurate textures and orbital motion.  
+- Users can **zoom, rotate, and navigate** through the solar system.  
+- Demonstrates how real-time 3D cosmic navigation can make astronomy more engaging and intuitive.  
 
-Users can zoom, rotate, and navigate through the solar system to understand planetary positions and motion.
+---
 
-It demonstrates how real-time, 3D cosmic navigation can make astronomy more engaging and intuitive.
+## 🌌 High-Resolution NASA Image Explorer
 
-🌌 High-Resolution NASA Image Explorer:
+- Powered by **OpenSeadragon** to handle deep-zoom NASA imagery.  
+- Explore gigapixel-quality images like the **Andromeda Galaxy** or **Moon surface**.  
+- Interactive **zoom and pan** experience, similar to Google Maps but for galaxies.  
+- Annotation & labeling features help identify **nebulae, clusters, and other regions of interest**.  
 
-Uses NASA’s real imagery (e.g., Andromeda Galaxy or Moon surface) processed into deep-zoom tiles.
+---
 
-With OpenSeadragon, users can zoom in and pan across gigapixel-quality space images—similar to Google Maps but for galaxies.
+## 🔗 Linking Both Worlds
 
-Includes annotation and labeling features, allowing users to identify nebulae, clusters, or interesting regions.
+- Bridges **real observational data** (NASA images) with **3D simulation data** (planetary models).  
+- Provides a complete view—from **real telescope images** to **theoretical simulations**.  
+- Future scope:  
+  - Click on a galaxy in NASA imagery and compare it instantly with a **simulated cosmological model** (e.g., Illustris Project).  
 
-🔗 Linking Both Worlds:
+---
 
-The system connects observational data (NASA images) with simulation data (3D models) to give users a complete view—from real telescope images to theoretical simulations.
+## 🚀 Vision
 
-Future versions can let users click on a galaxy in NASA imagery and instantly compare it with a simulated version from cosmological models (like the Illustris Project).
+Fortis Fotuna transforms raw NASA data into an **interactive educational and research experience**, making space exploration accessible and engaging for everyone—students, educators, and astronomy enthusiasts alike.  
 
-Overall, the project bridges science and visualization, turning raw NASA data into an interactive educational and research experience for anyone curious about space.
+---
 
 # How does it work?
-1. Frontend Interface (React.js)
+---
 
-Developed using React with two main tabs:
+## 🖥️ Frontend Interface (React.js)
 
-Image Explorer
+- Developed using **React** with two main tabs:  
+  - **Image Explorer**  
+  - **Simulation Explorer**  
+- Clean, responsive, and intuitive design.  
+- Allows seamless switching between **2D image exploration** and **3D simulation navigation**.  
 
-Simulation Explorer
+---
 
-Offers a clean, responsive, and easy-to-use design.
+## 🌌 High-Resolution Image Explorer (OpenSeadragon)
 
-Allows seamless switching between 2D image exploration and 3D simulation navigation.
+- NASA’s images are **processed into tiled layers** using **Libvips**.  
+- **OpenSeadragon** dynamically loads and renders these tiles for **smooth zooming and panning**.  
+- Features:  
+  - Explore **gigapixel-quality space images**.  
+  - Add **annotations** and learn about specific regions.  
+---
 
-2. High-Resolution Image Explorer (OpenSeadragon)
+## 🪐 3D Simulation Explorer (Three.js)
 
-NASA’s images are processed into tiled layers using Libvips.
+- Built using **Three.js** for 3D visualization.  
+- Renders **Sun, Earth, Mars, and Jupiter** with **realistic textures and orbital motion**.  
+- Interactive camera controls: **zoom, pan, rotate**.  
+- Visually demonstrates **planetary movement and spatial relationships**.  
+---
 
-OpenSeadragon dynamically loads and renders these tiles for smooth zoom and pan.
+---
 
-Users can explore gigapixel images, add annotations, and learn about specific regions.
+## 🌟 Benefits
 
-A lightweight Node.js backend handles label storage and data serving.
+- Enables **immersive learning and exploration** of the universe through interactive tools.  
+- Combines **real NASA imagery** and **3D simulation** to make space science more accessible.  
+- Promotes **STEM education** by visualizing complex astronomical data in an engaging way.  
+- Lays the foundation for future tools linking **observation (NASA data)** and **simulation (cosmic models)**.  
+- Supports **citizen science** by allowing users to label and analyze celestial objects interactively.  
 
-3. 3D Simulation Explorer (Three.js)
+---
 
-Uses Three.js to render the Sun, Earth, Mars, and Jupiter with realistic orbital motion.
+## 🎯 Goals & Objectives
 
-Includes interactive camera controls (zoom, pan, rotate).
+- Build a **prototype** demonstrating seamless exploration of NASA’s high-resolution space imagery and a simplified 3D solar system simulation.  
+- Show how **real observational data** and **simulated cosmic models** can work together in a single experience.  
+- Highlight the potential of **AI + Web technologies** for large-scale space visualization and interpretation.  
+- Inspire a vision where users can **explore galaxies, label them, and compare real vs simulated data interactively**.  
 
-Demonstrates planetary movement and spatial relationships visually.
+---
 
-4. Backend and Data Flow
+## 🛠️ Tools, Languages, and Technologies
 
-Node.js API manages:
+- **Frontend:** React.js  
+- **3D Simulation:** Three.js (WebGL-based Solar System Model)  
+- **Image Explorer:** OpenSeadragon (deep-zoom viewer)  
+- **Image Processing:** Libvips (tiling NASA images into 256×256 tiles)  
+- **Design Tools:** Figma / Canva (UI/UX mockups)  
+- **Data Source:** NASA Image and Video Library (Andromeda Galaxy, Mars, Moon datasets)  
+- **Deployment:** Personal Server
 
-Annotation storage
+---
 
-Serving preprocessed image tiles
+## 📂 NASA Data
 
-The backend is lightweight, ensuring fast performance during the demo.
+**Primary Sources:**  
+- NASA Andromeda Galaxy imagery  
+- NASA Mars and Moon surface datasets  
 
-5. Integration & Scalability
+**Used for:**  
+- Building **deep-zoom demo tiles** in OpenSeadragon  
+- Creating **visually accurate backdrops** for the prototype  
 
-Both explorers are integrated under one React UI.
+**Purpose:** Demonstrate scalable exploration of NASA’s **gigapixel imagery**.  
 
-Can scale to:
+---
 
-Connect live to NASA APIs for real-time imagery.
+## 🌍 Space Agency Partner & Other Data
 
-Integrate AI to automatically detect or label celestial features.
+- Future integration with:  
+  - **ESA (European Space Agency)**  
+  - **Illustris Simulation API** (for theoretical cosmic analogs)  
 
-Extend to cosmological simulations (Illustris API).
+These partnerships will enrich the platform with **multi-agency archives** and **simulated universe datasets**.  
 
-# What benefits does it have?
+---
 
-Enables immersive learning and exploration of the universe through interactive tools.
+## 🤖 Use of Artificial Intelligence (Future Scope)
 
-Combines real NASA imagery and 3D simulation to make space science more accessible.
+AI integration planned for future scaling:  
+- **Automatic labeling** of galaxies or features in NASA imagery.  
+- **Recommendations** for related regions or simulations based on exploration.  
+- **ML-based recognition** to classify celestial objects in real time.  
 
-Promotes STEM education by visualizing complex astronomical data in an engaging way.
-
-Lays the foundation for future scientific tools that link observation (NASA data) and simulation (cosmic models).
-
-Supports citizen science by allowing users to label and analyze celestial objects interactively.
-
-# What do you hope to achieve?
-
-To build a prototype demonstrating seamless exploration of NASA’s high-resolution space imagery and a simplified 3D solar system simulation.
-
-To show how real observational data and simulated cosmic models can work together in a single user experience.
-
-To highlight the potential of using AI and Web technologies for visualizing and interpreting space data at scale.
-
-To inspire a vision where users can explore galaxies, label them, and compare real and simulated data interactively.
-
-# What tools, coding languages, hardware, or software did you use to develop your project?
-
-Frontend: React.js
-
-3D Simulation: Three.js (WebGL-based Solar System Model)
-
-Image Explorer: OpenSeadragon (deep-zoom viewer)
-
-Image Processing: Libvips (for tiling NASA images into 256×256 tiles)
-
-Backend: Node.js with minimal API for annotation storage
-
-Design Tools: Figma / Canva (for UI-UX mockups)
-
-Data Source: NASA Image and Video Library (Andromeda Galaxy, Mars, Moon datasets)
-
-Deployment (optional): Vercel / Netlify
-
-# NASA Data
-
-Primary Sources:
-
-NASA Andromeda Galaxy imagery
-
-NASA Mars and Moon surface datasets
-
-Used for:
-
-Building deep-zoom demo tiles in OpenSeadragon
-
-Creating visually accurate backdrops for the prototype
-
-Purpose: Demonstrate scalable exploration of NASA’s gigapixel imagery.
-
-# Space Agency Partner & Other Data
-
-Future integration with ESA and Illustris Simulation API (for theoretical cosmic analogs).
-
-These partnerships could enrich the experience with simulated universe datasets and multi-agency image archives.
-
-# Use of Artificial Intelligence
-
-AI is planned for future scaling, where it can:
-
-Automatically label galaxies or features in NASA imagery.
-
-Recommend related regions or simulations based on user exploration.
-
-Use ML-based image recognition to classify celestial objects.
+---
 
 
 
